@@ -1,5 +1,6 @@
 
 #import "RNUiqRnHelloSdk.h"
+#import <UIQHello/UIQTestView.h>
 
 @implementation RNUiqRnHelloSdk
 
@@ -7,7 +8,11 @@
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(RNUiqRnHelloSdk);
+
+RCT_EXPORT_METHOD(showMessage) {
+    [UIQTestView showMessage];
+}
 
 @end
   
