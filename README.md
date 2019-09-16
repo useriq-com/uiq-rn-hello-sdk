@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ npm install react-native-uiq-rn-hello-sdk --save`
+`$ npm install git+https://github.com/useriq-com/uiq-rn-hello-sdk.git --save`
 
 ### Mostly automatic installation
 
