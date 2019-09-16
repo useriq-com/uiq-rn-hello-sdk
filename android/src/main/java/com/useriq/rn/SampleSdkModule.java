@@ -3,6 +3,7 @@ package com.useriq.rn;
 import android.content.Context;
 
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.useriq.sample_sdk.Main;
@@ -10,9 +11,11 @@ import com.useriq.sample_sdk.Main;
 public class SampleSdkModule extends ReactContextBaseJavaModule {
 
     private static final String TAG = "sample_sdk";
+    private ReactContext reactContext;
 
     public SampleSdkModule(ReactApplicationContext reactContext) {
         super(reactContext);
+        this.reactContext = reactContext;
     }
 
     @Override
@@ -21,7 +24,7 @@ public class SampleSdkModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void init(Context context) {
-        new Main().showDialog(context);
+    public void init() {
+        new Main().showDialog(reactContext);
     }
 }
