@@ -31,8 +31,5 @@
     "mem": "^4.0.0",
     "merge": "^1.2.1",
     "react-navigation": "git+https://github.com/react-navigation/react-navigation.git"
-  },
-  "bugs": {
-    "url": "https://github.com/useriq-com/uiq-rn-hello-sdk/issues"
   }
 }
