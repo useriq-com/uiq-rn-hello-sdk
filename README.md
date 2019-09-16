@@ -43,8 +43,8 @@
 
 ## Usage
 ```javascript
-import RNUiqRnHelloSdk from 'react-native-uiq-rn-hello-sdk';
+import UIQHello from 'react-native-uiq-rn-hello-sdk';
 
-RNUiqRnHelloSdk.showMessage();
+UIQHello.showMessage();
 ```
   
