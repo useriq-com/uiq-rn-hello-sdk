@@ -3,6 +3,7 @@ package com.reactlibrary;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.useriq.sample_sdk.*;
 
 public class RNUiqRnHelloSdkModule extends ReactContextBaseJavaModule {
 
