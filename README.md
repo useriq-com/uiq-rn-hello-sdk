@@ -9,6 +9,13 @@
 
 `$ react-native link react-native-uiq-rn-hello-sdk`
 
+
+### Additional Steps For iOS
+1. Go to the iOS folder of the project
+2. Open `Podfile`.
+3. Add `pod UIQHello` under `target <app-name>`.
+4. Go to iOS folder in command line and enter `pod install`.
+
 ### Manual installation
 
 
@@ -34,20 +41,10 @@
       compile project(':react-native-uiq-rn-hello-sdk')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNUiqRnHelloSdk.sln` in `node_modules/react-native-uiq-rn-hello-sdk/windows/RNUiqRnHelloSdk.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Uiq.Rn.Hello.Sdk.RNUiqRnHelloSdk;` to the usings at the top of the file
-  - Add `new RNUiqRnHelloSdkPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
 import RNUiqRnHelloSdk from 'react-native-uiq-rn-hello-sdk';
 
-// TODO: What to do with the module?
-RNUiqRnHelloSdk;
+RNUiqRnHelloSdk.showMessage();
 ```
   
