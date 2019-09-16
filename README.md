@@ -13,7 +13,7 @@
 ### Additional Steps For iOS
 1. Go to the iOS folder of the project
 2. Open `Podfile`.
-3. Add `pod UIQHello` under `target <app-name>`.
+3. Add `pod 'UIQHello'` under `target <app-name>`.
 4. Go to iOS folder in command line and enter `pod install`.
 
 ### Manual installation
